@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e5e5e5;
+  background-image: repeating-linear-gradient(
+    0deg,
+    #e5e5e5,
+    #e5e5e5 1px,
+    #f3f3f3 1px,
+    #f3f3f3 3px
+  );
+}
+
+.pagina {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.caixa {
+  max-width: 960px;
+  background: white;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 5px #bbb;
+  border: 1px solid #ccc;
+}
+
+.cabecalho-topo {
+  background-color: #2a3c6b;
+  color: white;
+  padding: 6px 0;
+  border-bottom: 4px solid #e6b02e;
+  text-align: center;
+}
+
+.container-topo {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.container-topo .descricao {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: none;
+  margin-left: 6px;
+}
+
+.alerta {
+  background-color: #eff3fa;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.alerta strong {
+  color: #cc0000;
+}
+
+.sistemas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.sistema {
+  background-color: #f0f4fb;
+  border: 1px solid #ccc;
+  width: 180px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.sistema span {
+  display: block;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.sistema.destaque {
+  background-color: #ffffe4;
+}
+
+.links-ajuda {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.links-ajuda a {
+  color: #0033cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login {
+  width: 60%;
+  margin: 0 auto 20px auto;
+  background-color: #f5f7fc;
+  border: 1px solid #999;
+  padding: 15px;
+}
+
+.login h3 {
+  margin-top: 0;
+  background-color: #ccd8f1;
+  padding: 8px;
+  font-size: 16px;
+  text-align: center;
+  border-bottom: 1px solid #aaa;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 20px;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+  padding: 5px;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.login button {
+  padding: 8px;
+  font-weight: bold;
+  background-color: #ddd;
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+
+.cadastro {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 13px;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.cadastro div {
+  flex: 1;
+}
+
+.cadastro a {
+  color: #0033cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.rodape-sigaa {
+  background-color: #2a3c6b;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+.rodape-sigaa .versao {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .login {
+    width: 95%;
+  }
+
+  .cadastro {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sistemas {
+    flex-direction: column;
+  }
+
+  .sistema {
+    width: 100%;
+  }
+}
